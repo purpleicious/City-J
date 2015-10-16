@@ -62,6 +62,11 @@ public abstract class BuildingAbstract {
 		tile = tileToSet;
 	}
 	
+	public void setCoord(int x, int y){
+		xCoord = x;
+		yCoord = y;
+	}
+	
 	// The "signature of a method" in java is its name and parameters, which allows you to use it
 	public void draw(Graphics g) {
 		g.drawImage(tile, xCoord, yCoord, null);
