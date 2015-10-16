@@ -6,7 +6,6 @@ import java.awt.image.BufferedImage;
 public abstract class BuildingAbstract {
 
 	// hide data or encapsulate, so setters and getters have to be used in case input has to be checked
-	// int data possible data values are between -2,147,483,648 to 2,147,483,647, youtube can't use int anymore due to Justin Bieber! 
 	private int xCoord;
 	private int yCoord;
 	private int width;

@@ -4,20 +4,20 @@ import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import city_j.media.SpriteSheet;
 
-public class BuildingHouse extends BuildingAbstract {
+public class BuildingScience extends BuildingAbstract {
 	
 	// Added a custom constructor that draws upon instantiating
-	public BuildingHouse(Graphics g, int x, int y, int houseNumber) {
+	public BuildingScience(Graphics g, int x, int y, int houseNumber) {
 		
 //		get correct tile
-//		Blue, Green 0, Red, Green 2, Orange 2, Green 1, Orange 1, Yellow
-		BufferedImage building_tile = SpriteSheet.spriteSheet("/Users/jack.sarick/Schoolwork_15-16/APC/city_j/src/city_j/media/house_tiles.png", 65, 72, 1, 8)[houseNumber];
+//		Laboratory and Radio
+		BufferedImage building_tile = SpriteSheet.spriteSheet("/Users/jack.sarick/Schoolwork_15-16/APC/city_j/src/city_j/media/big_building_tiles.png", 150, 182, 1, 2)[houseNumber];
 		
 		// this refers to current instance of class
 		this.setX(x);
 		this.setY(y);
-		this.setWidth(65);
-		this.setHeight(72);
+		this.setWidth(150);
+		this.setHeight(182);
 		this.setTile(building_tile);
 		
 		// calls the super class draw method.
